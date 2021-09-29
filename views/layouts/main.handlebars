@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Just Tech News</title>
+    <title>Spot</title>
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
@@ -14,17 +14,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-    <div class="wrapper">
+    <div class="nav-wrapper">
     <header>
       <nav class="orange darken-1">
-          <a href="/">
+          <a href="/" class="brand-logo">
           <img src="stylesheets/images/navlogo.png">
           </a>
         {{#if loggedIn}}
-        <a href="/dashboard">dashboard</a>
-        <button id="logout" class="btn-no-style">logout</button>
+        <a href="/dashboard" class="right">dashboard</a>
+        <a href="/logout" class="right" id="logout">Logout</a>
         {{else}}
-        <a href="/login">login</a>
+        <a href="/login" class="right" id="login">Login</a>
         {{/if}}
       </nav>
 
