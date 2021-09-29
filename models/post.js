@@ -8,7 +8,7 @@ class Post extends Model {}
 Post.init(
     {
       columnone: {
-        type: DataTypes.STRING.VarBinary,
+        type: DataTypes.STRING.BINARY,
         defaultValue: "Picture"
       },
       columntwo: {
