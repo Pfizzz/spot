@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Just Tech News</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
     <div class="wrapper">
     <header>
-      <h1>
-        <a href="/">Spot</a>
-      </h1>
-      <nav>
+      <nav class="orange darken-1">
+          <a href="/">
+          <img src="stylesheets/images/navlogo.png">
+          </a>
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
         <button id="logout" class="btn-no-style">logout</button>
@@ -21,12 +27,14 @@
         <a href="/login">login</a>
         {{/if}}
       </nav>
+
+    </div>
     </header>
     <main>
       {{{ body }}}
     </main>
-    <footer>
-      Thanks for visiting!
+    <footer class="tables center-align">
+      Thank you for visiting Spot. Copyright 2021 Monkey Media, LLC
     </footer>
   </div>
   {{#if loggedIn}}
