@@ -7,31 +7,31 @@ class Post extends Model {}
 // create fields/columns for Post model
 Post.init(
     {
-      columnone: {
+      ColumnOne: {
         type: DataTypes.STRING.BINARY,
         defaultValue: "Picture"
       },
-      columntwo: {
+      ColumnTwo: {
         type: DataTypes.STRING,
         defaultValue: "Gender"
       },
-      columnthree: {
+      ColumnThree: {
         type: DataTypes.STRING,
         defaultValue: "Age"
       },
-      columnfour: {
+      ColumnFour: {
         type: DataTypes.STRING,
         defaultValue: "Size"
       },
-      columnfive: {
+      ColumnFive: {
         type: DataTypes.STRING,
         defaultValue: "Contact Details"
       },
-      columnsix: {
+      ColumnSix: {
         type: DataTypes.STRING,
         defaultValue: "Breed"
       },
-      columnseven: {
+      ColumnSeven: {
         type: DataTypes.STRING,
         defaultValue: "Attributes"
       },
