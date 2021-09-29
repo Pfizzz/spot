@@ -24,6 +24,7 @@
                         <th>Gender</th>
                         <th>Age</th>
                         <th>Size</th>
+                        <th>Contact Details</th>
                         <th>Breed</th>
                         <th>Attributes</th>
                     </thead>
@@ -40,6 +41,7 @@
                         <th>Gender</th>
                         <th>Age</th>
                         <th>Size</th>
+                        <th>Contact Details</th>
                         <th>Breed</th>
                         <th>Attributes</th>
                     </thead>
@@ -101,6 +103,10 @@
              <td>${element.gender}</td>
              <td>${element.age}</td>
              <td>${element.size}</td>
+             <td>email: ${element.contact.email}<br/>
+                 phone number: ${element.contact.phone}<br/>
+                 state: ${element.contact.address.state}
+             </td>
              <td>${element.breeds.primary}</td>
              <td>declawed: ${element.attributes.declawed} <br/>
                  house_trained: ${element.attributes.house_trained} <br/>
@@ -141,6 +147,10 @@
              <td>${element.gender}</td>
              <td>${element.age}</td>
              <td>${element.size}</td>
+             <td>email: ${element.contact.email}<br/>
+                 phone number: ${element.contact.phone}<br/>
+                 state: ${element.contact.address.state}
+             </td>
              <td>${element.breeds.primary}</td>
              <td>declawed: ${element.attributes.declawed} <br/>
                  house_trained: ${element.attributes.house_trained} <br/>
