@@ -84,13 +84,17 @@
              <td>${element.gender}</td>
              <td>${element.age}</td>
              <td>${element.size}</td>
+             <td>email: ${element.contact.email}<br/>
+                 phone number: ${element.contact.phone}<br/>
+                 state: ${element.contact.address.state}
+             </td>
              <td>${element.breeds.primary}</td>
              <td>declawed: ${element.attributes.declawed} <br/>
                  house_trained: ${element.attributes.house_trained} <br/>
                  shots_current: ${element.attributes.shots_current} <br/>
                  spayed_neutered: ${element.attributes.spayed_neutered} <br/>
                  special_needs: ${element.attributes.spayed_neutered}
-                
+
                 </td>
                 `)
                         data_table.row.add(row).draw();
