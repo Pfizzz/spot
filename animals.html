@@ -12,6 +12,7 @@
         <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
         <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap4.min.js"></script>
         <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap4.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
     
     <body>
@@ -75,8 +76,8 @@
                     },
                     "data": {
                         "grant_type": "client_credentials",
-                        "client_id": "lq8oe9WnaxpCE4XDAPUSmtSpLvTSFVUX67VKtQOsYNNJcLW55n",
-                        "client_secret": "3B1mNzf5xkBUzhTOgRgmqZfbqwK64jG7rgQDIy32"
+                        "client_id": "A1FDC3mKblJ6uMg2pt2jq3WwUYeHqKoIYcTqTaUTK5SD2ww9Af",
+                        "client_secret": "9NHywJHrkk2YWCj5XlOmNfe5VCzrx9F7fF636oZ6"
                     }
                 };
     
@@ -108,11 +109,11 @@
                  state: ${element.contact.address.state}
              </td>
              <td>${element.breeds.primary}</td>
-             <td>declawed: ${element.attributes.declawed} <br/>
-                 house_trained: ${element.attributes.house_trained} <br/>
-                 shots_current: ${element.attributes.shots_current} <br/>
-                 spayed_neutered: ${element.attributes.spayed_neutered} <br/>
-                 special_needs: ${element.attributes.spayed_neutered}
+             <td>declawed: ${element.attributes.declawed ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 house_trained: ${element.attributes.house_trained ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 shots_current: ${element.attributes.shots_current ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 spayed_neutered: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 special_needs: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'}
                 
                 </td>
                 `)
@@ -152,11 +153,11 @@
                  state: ${element.contact.address.state}
              </td>
              <td>${element.breeds.primary}</td>
-             <td>declawed: ${element.attributes.declawed} <br/>
-                 house_trained: ${element.attributes.house_trained} <br/>
-                 shots_current: ${element.attributes.shots_current} <br/>
-                 spayed_neutered: ${element.attributes.spayed_neutered} <br/>
-                 special_needs: ${element.attributes.spayed_neutered}
+             <td>declawed: ${element.attributes.declawed ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 house_trained: ${element.attributes.house_trained ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 shots_current: ${element.attributes.shots_current ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 spayed_neutered: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 special_needs: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'}
                 
                 </td>
                 `)
