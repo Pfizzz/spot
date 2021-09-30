@@ -36,7 +36,6 @@
                 </table>
         </div>
         <script>
-    
             var page_count = 1
             var page_count2 = 1
             var data_table;
@@ -86,7 +85,7 @@
              <td>${element.gender}</td>
              <td>${element.age}</td>
              <td>${element.size}</td>
-             <td>email: ${element.contact.email}<br/>
+             <td>email: <a href="mailto:${element.contact.email}">${element.contact.email}</a><br/>
                  phone number: ${element.contact.phone}<br/>
                  state: ${element.contact.address.state}
              </td>
