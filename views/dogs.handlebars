@@ -90,11 +90,12 @@
                  state: ${element.contact.address.state}
              </td>
              <td>${element.breeds.primary}</td>
-             <td>declawed: ${element.attributes.declawed} <br/>
-                 house_trained: ${element.attributes.house_trained} <br/>
-                 shots_current: ${element.attributes.shots_current} <br/>
-                 spayed_neutered: ${element.attributes.spayed_neutered} <br/>
-                 special_needs: ${element.attributes.spayed_neutered}
+              <td>
+                 house_trained: ${element.attributes.house_trained ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 shots_current: ${element.attributes.shots_current ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 spayed_neutered: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 special_needs: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'}
+          
 
                 </td>
                 `)
