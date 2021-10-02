@@ -23,37 +23,38 @@
     <!-- SIGN UP FORM -->
     {{#if loggedIn}}
     {{else}}
-    <header>
-                  <div class="container center-align">
+    <div class="container center-align">
+      <header>
+                  <div class=" center-align">
         <img class="responsive-img" src="stylesheets/images/logo1.png">
         <p class="flow-text orange-text">Find your pet today!</p>
 
-        <h3 class="orange-text accent-4 center-align ">Sign Up</h1>
+        <h4 class="orange-text accent-4 center-align ">Sign Up</h1>
       </header>
-      <div class="container pt-60 center-align">
+      <div class="container pt-60 center-align forms">
         <div class="row center-align">
           <form class="col s12 signup-form">
-            <div class="row center-align">
-              <div class="input-field col s6">
+            <div class="row formbox center-align">
+              <div class="input-field col s12">
                 <input type="text" class="validate" id="username-signup">
                 <label for="username-signup">Username</label>
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s6">
+              <div class="input-field col s12">
                 <input type="password" class="validate" id="password-signup">
                 <label for="password-signup">Password</label>
               </div>
             </div>
             <div class="row">
-              <div class="input-field col s6">
+              <div class="input-field col s12">
                 <input type="email" class="validate" id="email-signup">
                 <label for="email-signup">Email</label>
               </div>
             </div>
             <div class="row">
               <div class="col s12 mt-25 center-align"> 
-                <button class="btn waves-effect waves-light pulse orange" type="submit">Register Now
+                <button class="btn waves-effect waves-light pulse purple accent-4" type="submit">Register Now
                 <i class="material-icons right">send</i>
                 </button>
               </div>
@@ -61,6 +62,7 @@
           </form>
         </div>
       </div>
+    </div>
       {{/if}}
 
     <div class="container center-align">
