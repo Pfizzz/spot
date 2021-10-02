@@ -13,6 +13,9 @@ The essence of Spot is to create a calm and fluid user expereince to assist you 
 * SQL
 * ORM
 * MVC
+* Bootstrap CSS
+* Materialize CSS
+* Animate.css - a new framework responsible for animating the homepage.
 
 ## Installation :rocket:
 1. Clone this repo in the terminal or through github desktop
