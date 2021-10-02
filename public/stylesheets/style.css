@@ -66,3 +66,15 @@
     .formbox {
         margin-left: 20px;
     }
+
+    nav { 
+        background: linear-gradient(to right, rgb(140, 0, 168) , orange); 
+      } 
+
+      .animate__animated.animate__pulse {
+        --animate-duration: 3s;
+      }
+
+    .form {
+        border-radius: 25px;
+    }
