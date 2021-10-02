@@ -26,8 +26,9 @@
                         <th>Gender</th>
                         <th>Age</th>
                         <th>Size</th>
+                        <th>Contact Details</th>
                         <th>Breed</th>
-                        <th>Attributes</th>
+                        <th>Details</th>
                     </thead>
                     <tbody>
     
@@ -97,11 +98,11 @@
                  state: ${element.contact.address.state}
              </td>
              <td>${element.breeds.primary}</td>
-             <td>declawed: ${element.attributes.declawed ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
-                 house_trained: ${element.attributes.house_trained ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
-                 shots_current: ${element.attributes.shots_current ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
-                 spayed_neutered: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
-                 special_needs: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'}
+             <td>Declawed?: ${element.attributes.declawed ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 House Trained?: ${element.attributes.house_trained ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 Shots Current?: ${element.attributes.shots_current ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 Spayed/neutered?: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'} <br/>
+                 Requires Special Needs?: ${element.attributes.spayed_neutered ? '<i class="fa fa-check text-success"></i>':'<i class="fa fa-times text-danger"></i>'}
           
                 
                 </td>

@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -16,15 +17,17 @@
 <body>
     <div class="nav-wrapper">
     <header>
-      <nav class="orange darken-1">
+      <nav>
           <a href="/" class="brand-logo">
           <img src="stylesheets/images/navlogo.png">
           </a>
         {{#if loggedIn}}
-        <a href="/dashboard" class="right">dashboard</a>
-        <a href="/logout" class="right" id="logout">Logout</a>
+        <ul>
+        <a href="/dashboard" class="right">Dashboard </a>
+        <a href="/logout" class="right" id="logout">Logout </a>
+        </ul>
         {{else}}
-        <a href="/login" class="right" id="login">Login</a>
+        <ul><a href="/login" class="right" id="login">Login</a></ul>
         {{/if}}
       </nav>
 
@@ -34,7 +37,7 @@
       {{{ body }}}
     </main>
     <footer class="tables center-align">
-      Thank you for visiting Spot. Copyright 2021 Monkey Media, LLC
+      Thank you for visiting Spot. &copy 2021 Monkey Media, LLC
     </footer>
   </div>
   {{#if loggedIn}}
