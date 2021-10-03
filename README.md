@@ -50,7 +50,7 @@ npm start
 http://localhost:3001/
 ```
 
-## :heroku: Heroku :heroku:
+## :checkered_flag: Heroku :checkered_flag:
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fierce-bayou-66905.herokuapp.com/)
 <br><br>
 
