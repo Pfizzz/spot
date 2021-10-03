@@ -50,6 +50,13 @@ npm start
 http://localhost:3001/
 ```
 
+## :heroku: Heroku :heroku:
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://fierce-bayou-66905.herokuapp.com/)
+<br><br>
+
+## :camera: Images :camera:
+[Click here to see the images of our application](https://github.com/Pfizzz/spot/tree/main/images)
+
 ## :sparkles: Code Contributors :sparkles:
 _Feel free to contact us!_
 
