@@ -1,3 +1,26 @@
-<section>
-    <h1>Test</h1>
+
+{{!-- about us --}}
+<section class="container-fluid d-flex p-2 justify-content-center align-items-center vh-100" id="about">
+  <div class="container">
+    <div class="row ">
+      <div class="col-md-6">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="text-left animated fadeInRightBig">{{title}}</h2>
+          <div id="save_btn_placeholder">
+            <button class="btn btn-orange" id="edit_user">Edit</button>
+          </div>
+        </div>
+        <hr class="bg-orange">
+        <p class="animated fadeInRightBig slow">
+          <ul class="list-group">
+            <input type="text" id="user_id" value="{{results.id}}">
+            <li class="list-group-item bg-dark-80"><div id="username">{{results.username}}</div></li>
+            <li class="list-group-item bg-dark-80"><div id="password">{{results.password}}</div></li>
+            <li class="list-group-item bg-dark-80"><div id="email">{{results.email}}</div></li>
+          </ul>
+        </p>
+      </div>
+    </div>
+  </div>
 </section>
+
