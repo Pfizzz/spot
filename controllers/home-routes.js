@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const sequelize = require('../config/connection');
-const { Post, User, Comment } = require('../models');
+const { Pet, User} = require('../models');
 
 router.get('/', (req, res) => {
   res.render('homepage', {
@@ -28,11 +28,11 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
-router.get('/dashboard', (req, res) => {
-  res.render('dashboard', {
-    loggedIn: req.session.loggedIn
-  });
-});
+// router.get('/dashboard', (req, res) => {
+//   res.render('dashboard', {
+//     loggedIn: req.session.loggedIn
+//   });
+// });
 
 
 module.exports = router;
