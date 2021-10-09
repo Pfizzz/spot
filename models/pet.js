@@ -2,10 +2,10 @@ const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
 // create our Pet"finder" model
-class Post extends Model {}
+class Pet extends Model {}
 
 // create fields/columns for Post model
-Post.init(
+Pet.init(
     {
       ColumnOne: {
         type: DataTypes.STRING.BINARY,
@@ -54,7 +54,7 @@ Post.init(
       sequelize,
       freezeTableName: true,
       underscored: true,
-      modelName: 'post'
+      modelName: 'pet'
     }
   );
-  module.exports = Post;
+  module.exports = Pet;
